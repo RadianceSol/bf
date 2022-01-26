@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/bf?useUnicode=true&character_set_server=utf8mb4&allowMultiQueries=true
+    username: root
+    password: 1234
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+  redis:
+    host: localhost
+  servlet:
+    multipart:
+      max-request-size: 50MB
+      max-file-size: 50MB
+
+
