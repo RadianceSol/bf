@@ -16,8 +16,8 @@ public class OSSConfig {
     @Bean
     public OSS ossClient() {
         String endpoint = "oss-cn-beijing.aliyuncs.com";
-        String keyId = "";
-        String keySecret = "";
+        String keyId = "11111";
+        String keySecret = "11111";
         return new OSSClientBuilder().build(endpoint, keyId, keySecret);
     }
 

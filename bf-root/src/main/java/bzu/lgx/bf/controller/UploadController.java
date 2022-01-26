@@ -21,6 +21,7 @@ import java.io.IOException;
  * @Data: 2022-01-18 19:23
  * @Description: 上传图片控制层
  */
+
 @RestController
 @RequestMapping("/upload")
 @Api("About Upload API")
