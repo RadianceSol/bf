@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @Author: LGX-LUCIFER
  * @Data: 2022-01-19 15:54
- * @Description: FIXME: Need To Delete .
+ * @Description: TODO: The Key Needs To Be Replaced With Your Own.
  */
 @Configuration
 public class OSSConfig {
@@ -16,8 +16,8 @@ public class OSSConfig {
     @Bean
     public OSS ossClient() {
         String endpoint = "oss-cn-beijing.aliyuncs.com";
-        String keyId = "11111";
-        String keySecret = "11111";
+        String keyId = "<your-access-key-id>";
+        String keySecret = "<your-access-key-secret>";
         return new OSSClientBuilder().build(endpoint, keyId, keySecret);
     }
 

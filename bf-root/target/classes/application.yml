@@ -5,6 +5,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/bf?useUnicode=true&character_set_server=utf8mb4&allowMultiQueries=true
+    # TODO The U/P Needs To Be Replaced With Your Own.
     username: root
     password: 1234
   jpa:
@@ -17,5 +18,9 @@ spring:
     multipart:
       max-request-size: 50MB
       max-file-size: 50MB
-
+  mail:
+    username: 2050180797@qq.com
+    password: xbpiokqqvbyfhcad
+    host: smtp.qq.com
+    default-encoding: UTF-8
 
