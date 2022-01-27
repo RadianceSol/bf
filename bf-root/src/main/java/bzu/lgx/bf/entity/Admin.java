@@ -1,5 +1,6 @@
 package bzu.lgx.bf.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,7 +18,10 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name = "bf_admin")
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler"}) // FIXME: JSON Has NULL, Need Config It.
 public class Admin implements Serializable {
+
+    private static final long serialVersionUID = 1488770918845763999L;
 
     @Id
     private String id;
