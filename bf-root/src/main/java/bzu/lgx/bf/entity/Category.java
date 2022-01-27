@@ -35,10 +35,10 @@ public class Category implements Serializable {
     private int goodsNum;
 
     @ApiModelProperty(example = "Y/N", notes = "是否显示")
-    private Byte isShow;
+    private String isShow;
 
     @ApiModelProperty(example = "Y/N", notes = "是否导航")
-    private Byte isMenu;
+    private String isMenu;
 
     @ApiModelProperty(example = "0", notes = "分类排序")
     private int sort;

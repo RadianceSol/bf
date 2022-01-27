@@ -20,7 +20,7 @@ spring:
       max-file-size: 50MB
   mail:
     username: 2050180797@qq.com
-    password: xbpiokqqvbyfhcad
+    password: <your-access-password> # TODO The Password Needs To Be Replaced With Your Own.
     host: smtp.qq.com
     default-encoding: UTF-8
 
