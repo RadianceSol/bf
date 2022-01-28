@@ -10,7 +10,7 @@ import lombok.Setter;
 /**
  * @Author: LGX-LUCIFER
  * @Data: 2022-01-08 12:52
- * @Description:
+ * @Description: HTTP结果封装
  */
 @Getter
 @Setter

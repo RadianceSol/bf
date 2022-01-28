@@ -8,12 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.Predicate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Author: LGX-LUCIFER
@@ -79,6 +78,21 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public Admin findById(String id) {
         return adminDao.getById(id);
+    }
+
+    @Override
+    public Admin findByUsername(String username) {
+        return adminDao.findByUsername(username);
+    }
+
+    @Override
+    public Set<String> findPermissions(String username) {
+        Set<String> permissions = new HashSet<>();
+        permissions.add("sys:user:view");
+        permissions.add("sys:user:add");
+        permissions.add("sys:user:edit");
+        permissions.add("sys:user:delete");
+        return permissions;
     }
 
     /**

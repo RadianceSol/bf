@@ -1,4 +1,4 @@
-package bzu.lgx.bf.config;
+package bzu.lgx.bf.security;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;

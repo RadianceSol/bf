@@ -1,4 +1,4 @@
-package bzu.lgx.bf.security;
+package bzu.lgx.bf.filter;
 
 import bzu.lgx.bf.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
