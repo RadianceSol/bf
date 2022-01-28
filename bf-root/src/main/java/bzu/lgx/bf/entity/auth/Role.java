@@ -19,9 +19,13 @@ import java.io.Serializable;
 @Table(name = "bf_role")
 public class Role implements Serializable {
 
+    private static final long serialVersionUID = -403022465633044846L;
+
     @Id
     private String id;
 
     private String roleName;
+
+    private String roleDesc;
 
 }
